@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -84,11 +85,39 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'gradient-x': {
+					'0%, 100%': { backgroundPosition: '0% 50%' },
+					'50%': { backgroundPosition: '100% 50%' }
+				},
+				'gradient-y': {
+					'0%, 100%': { backgroundPosition: '50% 0%' },
+					'50%': { backgroundPosition: '50% 100%' }
+				},
+				'pulse-slow': {
+					'0%, 100%': {
+						opacity: 1
+					},
+					'50%': {
+						opacity: 0.8
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'gradient-x': 'gradient-x 15s ease infinite',
+				'gradient-y': 'gradient-y 15s ease infinite',
+				'pulse-slow': 'pulse-slow 4s ease-in-out infinite'
+			},
+			backgroundImage: {
+				'gradient-education-1': 'linear-gradient(135deg, #0ea5e9, #3b82f6, #8b5cf6)',
+				'gradient-education-2': 'linear-gradient(135deg, #e879f9, #d946ef, #8b5cf6)',
+				'gradient-education-3': 'linear-gradient(135deg, #22d3ee, #0ea5e9, #2563eb)',
+				'gradient-education-4': 'linear-gradient(135deg, #a855f7, #d946ef, #ec4899)',
+				'gradient-education-5': 'linear-gradient(135deg, #3b82f6, #1d4ed8, #1e40af)',
+				'feature-gradient': 'linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(139, 92, 246, 0.1))',
+				'feature-gradient-hover': 'linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(139, 92, 246, 0.2))'
 			}
 		}
 	},
