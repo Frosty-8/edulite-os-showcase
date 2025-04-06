@@ -41,8 +41,8 @@ const Index = () => {
               <Button 
                 variant="outline" 
                 size="lg"
-                className="border-2 border-white text-white px-8 py-6 text-lg hover:bg-white/10 rounded-lg"
-                onClick={() => window.open("https://github.com/rohitkshirsagar19/EduLite-OS", "_blank")}
+                className="border-2 border-white text-black px-8 py-6 text-lg hover:bg-white/10 rounded-lg"
+                onClick={() => window.open("https://github.com/LhaseParth2610/EduliteOS", "_blank")}
               >
                 <Github className="w-5 h-5 mr-2" /> View on GitHub
               </Button>
