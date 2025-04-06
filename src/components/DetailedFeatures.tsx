@@ -1,6 +1,6 @@
-
 "use client";
 
+import React from 'react';
 import { motion } from "framer-motion";
 import { Bot, ListTodo, School, ShieldCheck, BookOpen } from "lucide-react";
 
